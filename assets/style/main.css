@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* ベースのスタイル
+------------------------------------------ */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-size: .9375rem;
+    line-height: normal;
+    color: #111;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    border-radius: 1.25rem;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* スムーススクロール */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.125rem;
+}
+
+
+
+/* 部品
+------------------------------------------ */
+/* フォント */
+.-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* 文字の太さbold */
+.-semibold {
+    font-weight: 600;
+}
+
+.-bold {
+    font-weight: 700;
+}
+
+/* コンテナ */
+.container {
+    margin: auto;
+}
+
+/* flexbox */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 見出し　2か国語セット */
+
+
+
+
+
+/* 下層ページmv */
+
+
+
+
+
+/* 下層ページ　価格・スペック　見出し */
+
+
+
+
+
+
+/* ヘッダー
+------------------------------------------ */
