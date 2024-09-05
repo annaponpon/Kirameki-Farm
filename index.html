@@ -31,7 +31,7 @@
 <body>
     <!-- ヘッダー -->
     <header class="header">
-        <div class="header-container flex">
+        <div class="header-container container flex">
             <h1 class="header__logo"><a href="#"><img src="/assets/image/header/header_logo.png" alt="Kirameki Farm"></a></h1>
 
             <!-- ハンバーガーボタン -->
@@ -56,10 +56,22 @@
     <main class="main">
         <!-- メインビジュアル -->
         <section class="mv">
+            <div class="mv-container container">
+                <!-- カバーテキスト -->
+                <div class="mv__cover-text-group flex">
+                    <h2 class="mv__cover-text-group--title -bold">持続可能な農業を目指す</h2>
+                    <p class="mv__cover-text-group--text">キラメキファームは革新的デザインの農業機器で未来の農業を実現。ビッグデータ・自動運転ロボット・リジェネラティブ農業で環境に優しい効率化を目指す。</p>
+                </div>
+                <!-- カバー -->
+                <picture class="mv__cover">
+                    <source srcset="/assets/image/mv/mv_cover_PC_01.jpg" media="(min-width: 768px)" class="mv__cover--pc">
+                    <img src="/assets/image/mv/mv_cover_SP_01.jpg" alt="" class="mv__cover--sp">
+                </picture>
+            </div>
         </section>
 
         <!-- 私たちについて -->
-        <section class="about">]
+        <section class="about">
         </section>
         
         <!-- 私たちが選ばれる3つの理由 -->
@@ -83,7 +95,7 @@
     <!-- フッター -->
     <footer class="footer">
         <div class="footer-container">
-            <a href="#"><img src="/assets/image/footer/footer_logo.png" alt="KIRAMEKI BEAUTY LABO"
+            <a href="#"><img src="" alt=""
                     class="footer__logo"></a>
         </div>
     </footer>
