@@ -19,7 +19,6 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
-    border-radius: 1.25rem;
 }
 
 ul {
@@ -51,18 +50,17 @@ html {
     font-weight: 700;
 }
 
-/* コンテナ */
-.container {
-    margin: auto;
-}
-
 /* flexbox */
 .flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
+/* 角丸画像 */
+.border-radius {
+    border-radius: 1.25rem;
+}
 
 /* 見出し　2か国語セット */
 
@@ -84,4 +82,120 @@ html {
 
 
 /* ヘッダー
+------------------------------------------ */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding-top: 1.75rem;
+    padding-inline: 1rem;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-top: 0;
+    }
+}
+
+.header-container {
+    max-width: 73rem;
+    margin-inline: auto;
+}
+
+
+/* ロゴ */
+@media (max-width: 767px) {
+    .header__logo {
+        width: 12.375rem;
+    }
+}
+
+
+/* ハンバーガーボタン */
+.header__hamburger-button {
+    position: fixed;
+    top: 1.4375rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .header__hamburger-button {
+        display: none;
+    }
+}
+
+.header__hamburger-button--bar {
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #000;
+}
+
+.header__hamburger-button--bar:not(:last-child) {
+    margin-bottom: .375rem;
+}
+
+
+/* ヘッダーナビゲーション、ハンバーガーメニュー
+------------------------------------------ */
+/* ヘッダーナビゲーション */
+.header__nav--list-group {
+    column-gap: 2.375rem;
+    margin-top: .75rem;
+}
+
+.header__nav--list-group a {
+    font-size: 1rem;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .header__nav--list-item-1st {
+        display: none;
+    }  
+}
+
+
+/* ハンバーガーメニュー */
+@media (max-width: 767px) {
+    .header__hamburger-menu {
+        position: fixed;
+        top: 3.9063rem;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 39.625rem);
+        transition: all 0.6s;
+        transform: translateX(100%);
+    }
+}
+
+/* アクティブ状態 */
+.header__hamburger-menu-active {
+    transform: translateX(0);
+}
+
+@media (max-width: 767px) {
+    .header__hamburger-menu--list-group {
+        background-color: #168352;
+        flex-direction: column;
+        row-gap: 1.9375rem;
+        margin-inline: 1rem;
+        margin-top: 0;
+        padding-top: 2.125rem;
+        padding-bottom: 2.25rem;
+        border-radius: 1.5rem;
+    }
+    .header__hamburger-menu--list-group a {
+        color: #fff;
+        font-size: 1.125rem;
+    }
+}
+
+
+
+/* メインビジュアル
 ------------------------------------------ */

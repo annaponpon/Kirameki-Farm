@@ -36,20 +36,21 @@
     <!-- ヘッダー -->
     <header class="header">
         <div class="header-container flex">
-            <h1 class="header__logo"><a href="#"><img src="/assets/image/header/header_logo.png"
-                        alt="KIRAMEKI BEAUTY LABO"></a></h1>
-            <nav class="header__nav">
-                <ul class="header__nav--list flex">
-                    <li class="header__nav--list-first flex">
-                        <a href="/contact/" class="button">お問い合わせ
-                            <i class="header__nav--list-icon bi bi-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li class="header__nav--list-second flex">
-                        <a href="/reservation/" class="button">カウンセリング予約(無料)
-                            <i class="header__nav--list-icon bi bi-chevron-right"></i>
-                        </a>
-                    </li>
+            <h1 class="header__logo"><a href="#"><img src="/assets/image/header/header_logo.png" alt="Kirameki Farm"></a></h1>
+
+            <!-- ハンバーガーボタン -->
+            <button type="button" class="header__hamburger-button flex">
+                <span class="header__hamburger-button--bar"></span>
+                <span class="header__hamburger-button--bar"></span>
+                <span class="header__hamburger-button--bar"></span>
+            </button>
+
+            <!-- ヘッダーナビゲーション、ハンーガーメニュー -->
+            <nav class="header__nav header__hamburger-menu">
+                <ul class="header__nav--list-group header__hamburger-menu--list-group flex -bold">
+                    <li class="header__nav--list-item-1st"><a href="/">トップ</a></li>
+                    <li class="header__nav--list-item-2nd"><a href="/price">価格・スペック</a></li>
+                    <li class="header__nav--list-item-3rd"><a href="/faq">よくあるご質問</a></li>
                 </ul>
             </nav>
         </div>
