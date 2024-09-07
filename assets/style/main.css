@@ -124,6 +124,7 @@ html {
     background-color: #fff;
     padding-top: 1.75rem;
     padding-inline: 1rem;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -459,6 +460,8 @@ html {
     }
 }
 
+
+/* 画像 */
 .features__content--item-group-img {
     display: block;
 }
@@ -470,6 +473,8 @@ html {
     }
 }
 
+
+/* テキスト */
 .features__content--item-group-text {
     font-size: 1.1875rem;
     padding-top: .75rem;
@@ -488,3 +493,172 @@ html {
         padding-bottom: .8125rem;
     }
 }
+
+
+
+/* 製品・サービス紹介
+------------------------------------------ */
+.products-service {
+    padding-top: 3.875rem;
+    padding-inline: 1rem ;
+}
+
+@media (max-width: 767px) {
+    .products-service {
+        padding-top: 3.3125rem;
+    }
+}
+
+.products-service-container {
+    max-width: 68.75rem;
+}
+
+.products-service__title .section-title-jp {
+    margin-top: .5rem;
+    margin-left: 0;
+}
+
+@media (max-width: 767px) {
+    .products-service__title .section-title-jp {
+        margin-top: .1875rem;
+    }
+}
+
+
+/* アイテム */
+.products-service__list-group {
+    margin-top: 1.8125rem;
+    row-gap: 2.5rem;
+    flex-wrap: wrap;
+    container-type: inline-size;
+}
+
+@media (max-width: 767px) {
+    .products-service__list-group {
+        flex-direction: column;
+        margin-top: 1.25rem;
+        row-gap: 1.25rem;
+    }
+}
+
+
+/* リンク */
+.products-service__list-group--item {
+    justify-content: start;
+    background-color: #168352;
+    border-radius: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .products-service__list-group--item {
+        width: 22.375rem;
+        padding: 1.25rem 1.5rem;
+        column-gap: 1.0625rem;
+    }
+}
+
+/* hover状態 */
+.products-service__list-group--item:hover {
+    background-color: #dffaec;
+}
+
+/* リンク　PC表示　1段目 */
+@media (min-width: 768px) {
+    .products-service__list-group-1st {
+        width: calc(50% - 1.625rem);
+        padding: 1.4375rem 1.875rem;
+        column-gap: 1.8125rem;
+        
+    }
+}
+
+@container (736px <= width <= 960px) {
+    .products-service__list-group-1st {
+        width: calc(50% - .8125rem);
+        column-gap: 1rem;
+    }
+}
+
+/* リンク　PC表示　2段目 */
+@media (min-width: 768px) {
+    .products-service__list-group-2nd {
+        width: calc((100% - 101px) / 3);
+        padding: 1.25rem 1.4375rem;
+        column-gap: 1.25rem;
+    }
+}
+
+@container (736px <= width <= 960px) {
+    .products-service__list-group-2nd {
+        width: calc((100% - 50px) / 3);
+        column-gap: .5rem;
+    }
+}
+
+
+/* 画像 */
+@media (max-width: 767px) {
+    .products-service__list-group--item-img {
+        width: 6.25rem;
+    }
+}
+
+@container (736px <= width <= 960px){
+    .products-service__list-group--item-img-1st {
+        width: 6.25rem;
+    }
+    
+    .products-service__list-group--item-img-2nd {
+        width: 5rem;
+    }
+}
+
+/* テキスト */
+.products-service__list-group--item-title {
+    color: #fff;
+    line-height: 1.75;
+}
+
+@media (max-width: 767px) {
+    .products-service__list-group--item-title {
+        width: 11.5rem;
+        font-size: 1.125rem;
+        line-height: 1.8;
+
+    }
+}
+
+/* hover状態 */
+.products-service__list-group--item-title:hover {
+    color: #168352;
+}
+
+/* テキスト PC表示　1段目　*/
+@media (min-width: 768px) {
+    .products-service__list-group--item-title-1st {
+        width: 14.375rem;
+        font-size: 1.5rem;
+    }
+}
+
+@container (736px <= width <= 960px) {
+    .products-service__list-group--item-title-1st {
+        font-size: 1.125rem;
+    }
+}
+
+/* テキスト PC表示　2段目　*/
+@media (min-width: 768px) {
+    .products-service__list-group--item-title-2nd {
+        width: 8.75rem;
+        margin-bottom: .25rem;
+        font-size: 1.25rem;
+    }
+}
+@container (736px <= width <= 960px) {
+    .products-service__list-group--item-title-2nd {
+        font-size: .875rem;
+    }
+}
+
+
