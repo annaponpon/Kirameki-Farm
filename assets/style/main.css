@@ -501,11 +501,13 @@ html {
 .products-service {
     padding-top: 3.875rem;
     padding-inline: 1rem ;
+    padding-bottom: 4rem;
 }
 
 @media (max-width: 767px) {
     .products-service {
         padding-top: 3.3125rem;
+        padding-bottom: 3.5rem;
     }
 }
 
@@ -662,3 +664,88 @@ html {
 }
 
 
+
+/* お客様の事例紹介
+------------------------------------------ */
+.case {
+    background-color: #f3f9f6;
+    padding-top: 3.6875rem;
+    padding-inline: 1rem;
+    padding-bottom: 3.6875rem;
+}
+
+@media (max-width: 767px) {
+    .case {
+        padding-top: 3.1875rem;
+        padding-bottom: 3.0625rem;
+    }
+}
+
+.case__title .section-title-jp {
+    margin-left: 0;
+}
+
+/* リンク　*/
+.case__list-group {
+    align-items: baseline;
+    column-gap: 1.875rem;
+    margin-top: 1.6875rem;
+}
+
+@media (max-width: 767px) {
+    .case__list-group {
+        flex-direction: column;
+        row-gap: 1.625rem;
+        margin-top: 1.25rem;
+    }
+}
+
+.case__list-group--item {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .case__list-group--item {
+        width: auto;
+        margin-inline: auto;
+    }
+}
+
+/* hover状態 */
+.case__list-group--item:hover {
+    opacity: 0.5;
+}
+
+
+
+
+/* 画像　*/
+.case__list-group--item-img-sp {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .case__list-group--item-img-pc {
+        display: none;
+    }
+
+    .case__list-group--item-img-sp {
+        display: block;
+    }
+}
+
+/* テキスト　*/
+.case__list-group--item-title {
+    font-size: 1.1875rem;
+    line-height: 1.75;
+    color: #09947b;
+    margin-top: .5rem;
+}
+
+@media (max-width: 767px) {
+    .case__list-group--item-title {
+        font-size: 1.125rem;
+        line-height: 1.75;
+        margin-top: .5rem;
+    }
+}
