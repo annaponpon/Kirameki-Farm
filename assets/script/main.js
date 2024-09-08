@@ -12,3 +12,16 @@ $(window).on('resize', function () {
   // ハンバーガーメニューを閉じる
   hamburger.removeClass('header__hamburger-menu-active');
 });
+
+
+// スリック
+$('.gallery__slick').slick({
+  dots: true, //ドットのナビ表示
+  arrows: false, // 前・次のスライド切り替える矢印表示
+  slidesToShow: 1, //表示するスライド枚数
+  slidesToScroll: 1, //1回で動くスライド数
+  swipe: true, //スワイプ操作を有効
+  infinite: true, // 無限再生
+  autoplay: false, // 自動再生
+  autoplaySpeed: 3000, // 自動再生のスピード
+});
