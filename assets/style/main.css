@@ -124,7 +124,7 @@ html {
     background-color: #fff;
     padding-top: 1.75rem;
     padding-inline: 1rem;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 
 @media (max-width: 767px) {
@@ -959,3 +959,58 @@ html {
         letter-spacing: 0;
     }
 }
+
+
+
+
+/* priceページ  ヘッダー
+------------------------------------------ */
+.price-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding-top: 1.75rem;
+    padding-inline: 7.25rem;
+    padding-bottom: 1.25rem;
+}
+
+@media (max-width: 767px) {
+    .price-header {
+        padding-top: 0;
+        padding-left: .9375rem;
+    }
+}
+@media (max-width: 767px) {
+    .price-header .header__logo {
+        width: 12.375rem;
+    }
+}
+
+.header__nav--list-group .price-color {
+    color: #168352;
+}
+
+@media (max-width: 767px) {
+    .header__nav--list-group .price-color {
+        color: #fff;
+    }
+}
+
+/* priceページ  メインビジュアル
+------------------------------------------ */
+
+/* priceページ  パンくずリスト
+------------------------------------------ */
+/* priceページ  ギャラリー
+------------------------------------------ */
+/* priceページ  特徴
+------------------------------------------ */
+/* priceページ  メーカー希望小売価格
+------------------------------------------ */
+/* priceページ  スペック
+------------------------------------------ */
+/* priceページ  お問い合わせ
+------------------------------------------ */
