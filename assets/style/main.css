@@ -965,6 +965,7 @@ html {
 
 /* priceページ  ヘッダー
 ------------------------------------------ */
+/* 位置調整 */
 .price-header {
     position: fixed;
     top: 0;
@@ -989,6 +990,8 @@ html {
     }
 }
 
+
+/* 文字色変更 */
 .header__nav--list-group .price-color {
     color: #168352;
 }
@@ -999,8 +1002,79 @@ html {
     }
 }
 
+
+
 /* priceページ  メインビジュアル
 ------------------------------------------ */
+.price .mv {
+    padding-top: 9.625rem;
+    padding-inline: 1rem;
+    padding-bottom: 1px;
+}
+
+@media (max-width: 767px) {
+    .price .mv {
+        padding-top: 5.1875rem;
+        padding-bottom: 1px;
+    }
+}
+
+.price .mv-container {
+    position: relative;/*相対配置*/
+    max-width: 75rem;
+    margin-inline: auto;
+}
+
+@media (max-width: 767px) {
+    .price .mv-container {
+        max-width: 22.375rem;
+    }
+}
+
+
+/* 画像 画面サイズで変更 */
+.price .mv__img--sp {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .price .mv__img--pc {
+        display: none;
+    }
+
+    .price .mv__img--sp {
+        display: block;
+    }
+}
+
+
+/* テキスト */
+.price .mv__title {
+    position: absolute;/*絶対配置*/
+    width: 20.4375rem;
+    background-color: #fff;
+    padding-top: 1.75rem;
+    padding-bottom: 2.0625rem;
+    padding-left: .25rem;
+    border-radius: 0 2.5rem 0 0;
+    text-align: center;
+    font-size: 2.25rem;
+    color: #000;
+    top: 79.5%;
+    left: 0;
+}
+
+@media (max-width: 767px) {
+    .price .mv__title {
+        font-size: 1.875rem;
+        position: unset;
+        text-align: unset;
+        padding: 0;
+        margin-top: 1.375rem;
+    }
+}
+
+
 
 /* priceページ  パンくずリスト
 ------------------------------------------ */
