@@ -184,6 +184,7 @@ html {
 
 @media (max-width: 767px) {
     .price-section-title {
+        max-width: 22.375rem;
         font-size: 1.375rem;
         border-bottom: .1875rem solid #DDD;
         padding-bottom: .5625rem;
@@ -1130,6 +1131,13 @@ html {
     justify-content: end;
 }
 
+@media (max-width: 767px) {
+    .price .breadcrumb__nav--list-group {
+        max-width: 22.625rem;
+        margin-inline: auto;
+    }
+}
+
 /* リンク */
 .price .breadcrumb__nav--list-group-item a {
     color: #000;
@@ -1223,64 +1231,63 @@ html {
 
 /* priceページ  特徴
 ------------------------------------------ */
-.price .features {
-    background-color: #fff;
+.price .price-features {
     padding-top: 2.125rem;
     padding-inline: 1rem;
 }
 
 @media (max-width: 767px) {
-    .price .features {
+    .price .price-features {
         padding-top: 1.8125rem;
     }
 }
 
-.features-container {
+.price .price-features-container {
     max-width: 50.0625rem;
 }
 
-.price .features__list-group {
+.price .price-features__list-group {
     align-items: baseline;
     column-gap: 1.875rem;
     margin-top: 2rem;
 }
 
 @media (max-width: 767px) {
-    .price .features__list-group {
+    .price .price-features__list-group {
         flex-direction: column;
         row-gap: 2.0625rem;
         margin-top: 1.5rem;
     }
 }
 
-.price .features__list-group--item {
+.price .price-features__list-group--item {
     width: 100%;
 }
 
 @media (max-width: 767px) {
-    .price .features__list-group--item {
+    .price .price-features__list-group--item {
         width: auto;
         margin-inline: auto;
     }
 }
 
 /* 画像 画面サイズで変更 */
-.price .features__list-group--item-img-sp {
+.price .price-features__list-group--item-img-sp {
     display: none;
 }
 
 @media screen and (max-width:767px) {
-    .price .features__list-group--item-img-pc {
+    .price .price-features__list-group--item-img-pc {
         display: none;
     }
 
-    .price .features__list-group--item-img-sp {
+    .price .price-features__list-group--item-img-sp {
         display: block;
     }
 }
 
 /* テキスト */
-.price .features__list-group--item-text {
+.price .price-features__list-group--item-text {
     font-size: 1.125rem;
     color: #000;
     margin-top: .5rem;
@@ -1289,7 +1296,7 @@ html {
 
 /* sp表示パーフェクトピクセル調整　（改行調整） */
 @media (max-width: 767px) {
-    .price .features__list-group--item-text {
+    .price .price-features__list-group--item-text {
         letter-spacing: -.0001rem;
         width: 22.375rem;
     }
@@ -1297,13 +1304,42 @@ html {
 
 
 
-
-
-
-
-
 /* priceページ  メーカー希望小売価格
 ------------------------------------------ */
+.price .retail-price {
+    padding-top: 3.5625rem;
+    padding-inline: 1rem;
+}
+
+@media (max-width: 767px) {
+    .price .retail-price {
+        padding-top: 3.375rem;
+    }
+}
+
+.price .retail-price-container {
+    max-width: 50rem;
+}
+
+/* テキスト */
+.price .retail-price__text {
+    font-size: 2rem;
+    margin-top: 1.5625rem;
+}
+
+@media (max-width: 767px) {
+    .price .retail-price__text {
+        margin-top: 1.0625rem;
+        max-width: 22.375rem;
+        margin-inline: auto;
+    }
+}
+
+.price .tax {
+    font-size: 1rem;
+}
+
+
 /* priceページ  スペック
 ------------------------------------------ */
 /* priceページ  お問い合わせ
