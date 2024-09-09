@@ -1223,6 +1223,85 @@ html {
 
 /* priceページ  特徴
 ------------------------------------------ */
+.price .features {
+    background-color: #fff;
+    padding-top: 2.125rem;
+    padding-inline: 1rem;
+}
+
+@media (max-width: 767px) {
+    .price .features {
+        padding-top: 1.8125rem;
+    }
+}
+
+.features-container {
+    max-width: 50.0625rem;
+}
+
+.price .features__list-group {
+    align-items: baseline;
+    column-gap: 1.875rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+    .price .features__list-group {
+        flex-direction: column;
+        row-gap: 2.0625rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.price .features__list-group--item {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .price .features__list-group--item {
+        width: auto;
+        margin-inline: auto;
+    }
+}
+
+/* 画像 画面サイズで変更 */
+.price .features__list-group--item-img-sp {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .price .features__list-group--item-img-pc {
+        display: none;
+    }
+
+    .price .features__list-group--item-img-sp {
+        display: block;
+    }
+}
+
+/* テキスト */
+.price .features__list-group--item-text {
+    font-size: 1.125rem;
+    color: #000;
+    margin-top: .5rem;
+    line-height: 1.75;
+}
+
+/* sp表示パーフェクトピクセル調整　（改行調整） */
+@media (max-width: 767px) {
+    .price .features__list-group--item-text {
+        letter-spacing: -.0001rem;
+        width: 22.375rem;
+    }
+}
+
+
+
+
+
+
+
+
 /* priceページ  メーカー希望小売価格
 ------------------------------------------ */
 /* priceページ  スペック
