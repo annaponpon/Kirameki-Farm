@@ -25,3 +25,22 @@ $('.gallery__slick').slick({
   autoplay: false, // 自動再生
   autoplaySpeed: 3000, // 自動再生のスピード
 });
+
+
+// アコーディオンメニュー
+$(function(){
+  //クリックで動く
+  $('.faq__accordion-box--q').click(function(){
+    $(this).toggleClass('active');
+    $(this).next('faq__accordion-box--a').slideToggle();
+  });
+});
+
+
+// Accordion button
+$(function () {
+  $('.js-accordionButton').click(function () {
+    $(this).next('.accordion__content').slideToggle(); // アコーディオンボタン要素の次にあるコンテンツを開閉する
+    $(this).toggleClass('is-open'); // アコーディオンボタン要素にclassを追加する
+  });
+});
