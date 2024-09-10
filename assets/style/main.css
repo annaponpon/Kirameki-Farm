@@ -1513,6 +1513,12 @@ html {
     border: .125rem solid #fff;
 }
 
+/* hover状態 */
+.price .contact__btn:hover {
+    background-color: #fff;
+    color: #168352;
+}
+
 
 
 /* faqページ  よくあるご質問
