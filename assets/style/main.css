@@ -1452,4 +1452,48 @@ html {
 
 /* priceページ  お問い合わせ
 ------------------------------------------ */
+/* 背景画像 */
+.price .contact {
+    margin-top: 4.5rem;
+    height: 28.125rem;
+    background-image: url("/assets/image/price/contact/contact_01_pc.png");
+    background-size: cover;
+    background-position: center;
+}
 
+@media (max-width: 767px) {
+    .price .contact {
+        margin-top: 4.0625rem;
+        height: 22.5rem;
+        background-image: url("/assets/image/price/contact/contact_01_sp.png");
+    }
+}
+
+/* 背景画像透過 */
+.price .contact-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: none;
+    padding-top: 11.5625rem;
+    padding-bottom: 11.5625rem;
+}
+
+@media (max-width: 767px) {
+    .price .contact-container {
+        padding-top: 8.75rem;
+        padding-bottom: 8.75rem;
+    }
+}
+
+/* ボタン */
+.price .contact__btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    border-radius: 3rem;
+    width: 22.375rem;
+    padding-top: 1.375rem;
+    padding-bottom: 1.5625rem;
+    margin-inline: auto;
+    font-size: 1.25rem;
+    border: .125rem solid #fff;
+}
