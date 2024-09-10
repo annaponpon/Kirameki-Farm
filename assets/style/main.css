@@ -1118,28 +1118,28 @@ html {
 
 
 
-/* priceページ  パンくずリスト
+/* priceページ・faqページ  パンくずリスト
 ------------------------------------------ */
 /* コンテナ */
-.price .breadcrumb {
+.breadcrumb {
     padding-top: 1.1875rem;
     padding-inline: 1rem;
 }
 
 @media (max-width: 767px) {
-    .price .breadcrumb {
+    .breadcrumb {
         padding-top: 1.3125rem;
         padding-inline: .875rem;
     }
 }
 
-.price .breadcrumb__nav {
+.breadcrumb__nav {
     max-width: 75.25rem;
     margin-inline: auto;
 }
 
 /* パンくずリスト */
-.price .breadcrumb__nav--list-group {
+.breadcrumb__nav--list-group {
     display: flex;
     column-gap: .25rem;
     list-style: none;
@@ -1147,20 +1147,20 @@ html {
 }
 
 @media (max-width: 767px) {
-    .price .breadcrumb__nav--list-group {
+    .breadcrumb__nav--list-group {
         max-width: 22.625rem;
         margin-inline: auto;
     }
 }
 
 /* リンク */
-.price .breadcrumb__nav--list-group-item a {
+.breadcrumb__nav--list-group-item a {
     color: #000;
     font-size: .75rem;
     vertical-align: .125rem;
 }
 
-.price .breadcrumb__nav--list-group-item + .breadcrumb__nav--list-group-item::before {
+.breadcrumb__nav--list-group-item + .breadcrumb__nav--list-group-item::before {
     padding-right: .25rem;
     font-family: "bootstrap-icons";
     font-size: .75rem;
