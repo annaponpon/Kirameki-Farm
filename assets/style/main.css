@@ -1061,10 +1061,11 @@ html {
 
 
 
-/* priceページ  ヘッダー
+/* priceページ・faqページ  ヘッダー
 ------------------------------------------ */
 /* 位置調整 */
-.price-header {
+.price-header,
+.faq-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -1077,20 +1078,22 @@ html {
 }
 
 @media (max-width: 767px) {
-    .price-header {
+    .price-header,
+    .faq-header {
         padding-top: 0;
         padding-left: .9375rem;
     }
 }
 
 @media (max-width: 767px) {
-    .price-header .header__logo {
+    .price-header .header__logo,
+    .faq-header .header__logo {
         width: 12.375rem;
     }
 }
 
 
-/* 文字色変更 */
+/* priceページ 文字色変更 */
 .header__nav--list-group .price-color {
     color: #168352;
 }
@@ -1100,6 +1103,18 @@ html {
         color: #fff;
     }
 }
+
+/* faqページ 文字色変更 */
+.header__nav--list-group .faq-color {
+    color: #168352;
+}
+
+@media (max-width: 767px) {
+    .header__nav--list-group .faq-color {
+        color: #fff;
+    }
+}
+
 
 
 

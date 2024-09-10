@@ -30,8 +30,8 @@
 
 <body>
     <!-- ヘッダー -->
-    <header class="header">
-        <div class="header-container flex">
+    <header class="faq-header">
+        <div class="header-container container flex">
             <h1 class="header__logo"><a href="#"><img src="/assets/image/header/header_logo.png" alt="Kirameki Farm"></a></h1>
 
             <!-- ハンバーガーボタン -->
@@ -46,7 +46,7 @@
                 <ul class="header__nav--list-group header__hamburger-menu--list-group flex -bold">
                     <li class="header__nav--list-item-1st"><a href="/">トップ</a></li>
                     <li class="header__nav--list-item-2nd"><a href="/price">価格・スペック</a></li>
-                    <li class="header__nav--list-item-3rd"><a href="/faq">よくあるご質問</a></li>
+                    <li class="header__nav--list-item-3rd"><a href="/faq" class="faq-color">よくあるご質問</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,11 +55,16 @@
     <!-- メイン -->
     <main class="faq">
         <!-- メインビジュアル -->
-        <section class="mv">
+        <section class="subpage-mv">
+            <div class="subpage-mv-container container">
+                <img src="/assets/image/faq/mv/mv_cover_pc_01.png" alt="" class="subpage-mv__img--pc">
+                <img src="/assets/image/faq/mv/mv_cover_sp_01.png" alt="" class="subpage-mv__img--sp">
+                <h2 class="subpage-mv__title">よくあるご質問</h2>
+            </div>
         </section>
 
         <!-- パンくずリスト -->
-        <section class="breadcrumb">]
+        <section class="breadcrumb">
         </section>
         
         <!-- よくあるご質問 -->
@@ -68,13 +73,7 @@
         
     </main>
 
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="footer-container">
-            <a href="#"><img src="/assets/image/footer/footer_logo.png" alt="KIRAMEKI BEAUTY LABO"
-                    class="footer__logo"></a>
-        </div>
-    </footer>
+    
     
 </body>
 
