@@ -508,6 +508,7 @@ html {
 @media (max-width: 767px) {
     .background {
         background-image: url(../image/about/about_sp_01.jpg);
+        background-size: cover;
         background-position: center;
         padding-inline: 1rem;
         margin-top: 1.25rem;
@@ -647,6 +648,7 @@ html {
     justify-content: start;
     background-color: #168352;
     border-radius: 1.5rem;
+    color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -660,6 +662,7 @@ html {
 /* hover状態 */
 .products-service__list-group--item:hover {
     background-color: #dffaec;
+    color: #168352;
 }
 
 /* リンク　PC表示　1段目 */
@@ -715,7 +718,6 @@ html {
 
 /* テキスト */
 .products-service__list-group--item-title {
-    color: #fff;
     line-height: 1.75;
 }
 
@@ -724,13 +726,7 @@ html {
         width: 11.5rem;
         font-size: 1.125rem;
         line-height: 1.8;
-
     }
-}
-
-/* hover状態 */
-.products-service__list-group--item-title:hover {
-    color: #168352;
 }
 
 /* テキスト PC表示　1段目　*/
@@ -980,12 +976,14 @@ html {
 /* hover状態 */
 .news__btn:hover {
     margin: 2.1875rem auto 0;
+    margin-bottom: -.1875rem;
     box-shadow: 0 .125rem 0 #066655;
 }
 
 @media (max-width: 767px) {
     .news__btn:hover {
         margin: 1.75rem auto 0;
+        margin-bottom: -.1875rem;
     }
 }
 
@@ -1415,13 +1413,6 @@ html {
 .price .spec__table td {
     border: 1px solid #ddd;
     letter-spacing: .0938rem;
-}
-
-@media (max-width: 767px) {
-    .price .spec__table th,
-    .price .spec__table td {
-        border: .5px solid #ddd;
-    }
 }
 
 .price .spec__table th {
