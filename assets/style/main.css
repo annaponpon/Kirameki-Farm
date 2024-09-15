@@ -1543,12 +1543,12 @@ html {
 
 /* アコーディオンメニューの間隔 */
 .accordion:not(:first-child) {
-    margin-top: 1.4375rem;
+    margin-top: 1.4688rem;
 }
 
 @media (max-width: 767px) {
     .accordion:not(:first-child) {
-        margin-top: 1.5rem;
+        margin-top: 1.2813rem;
     }
 }
 
