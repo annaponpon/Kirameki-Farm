@@ -1338,6 +1338,8 @@ html {
 .price .retail-price__text {
     font-size: 2rem;
     margin-top: 1.5625rem;
+    /* 既存Webサイトの修正_価格・スペックページ、メーカー希望小売価格文字色変更 */
+    color: #168352;
 }
 
 @media (max-width: 767px) {
