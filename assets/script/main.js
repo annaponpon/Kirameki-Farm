@@ -22,7 +22,7 @@ $('.gallery__slick').slick({
   slidesToScroll: 1, //1回で動くスライド数
   swipe: true, //スワイプ操作を有効
   infinite: true, // 無限再生
-  autoplay: false, // 自動再生
+  autoplay: true, // 自動再生
   autoplaySpeed: 3000, // 自動再生のスピード
 });
 
